@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Playfair Display';
+    /*font-family: 'Amatic SC';
+    font-family: 'Nothing You Could Do';
+    font-family: 'Cormorant Upright';*/
+    padding: 0.2rem;
+    background-image: url('images/backgrounds/vivek-kumar-JS_ohjocm00-unsplash.jpg');
+    background-size: cover;
+}
+
+header {
+    background-image: url('images/mark-teachey-TfIQZ2gFEvI-unsplash.jpg');
+    height: 250px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    display: none;
+}
+
+nav {
+    /*position: sticky;
+    top: -1px;
+    background-color: white;
+    z-index: 10;*/
+}
+
+.navContainer {
+    padding: 1rem 1rem 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navBox {
+    padding: 0.6rem 0.3rem;
+    border-radius: 24px;
+}
+
+.navBox a {
+    padding: 0.3rem 0.3rem;
+}
+
+a {
+    color:black;
+    font-weight: normal;
+    padding: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+}
+
+.navBox a:hover {
+    background-color:whitesmoke;
+    border-radius: 16px;
+}
+
+#findMe {
+    margin-left: 4.5rem;
+}
+
+/* MAIN SECTION */
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    margin: auto;
+    max-width: 61rem;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.box {
+    /*border-style: solid;
+    border-width: 0.01rem;*/
+    border-radius: 20px;
+    height: 14rem;
+    width: 14rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+#aboutMeBox {
+    grid-area: 1 / 1 / span 2 / span 2;
+    width: 29rem;
+}
+
+#myBackgroundBox {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+#theFutureBox {
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+#myExperienceBox {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#mySkillsBox {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#mySelfBox {
+    grid-area: 2 / 3 / span 1 / span 2;
+    width: 29rem;
+}
+
+
+footer {
+    margin: 0.2rem 0.2rem 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: white;
+}
