@@ -9,13 +9,13 @@ body {
     font-family: 'Playfair Display';
     /*font-family: 'Amatic SC';
     font-family: 'Nothing You Could Do';
-    font-family: 'Cormorant Upright';*/
-    padding: 0.2rem;
+    font-family: 'Cormorant Upright';
+    padding: 0.2rem;*/
 }
 
 header {
-    background-image: url('images/mark-teachey-TfIQZ2gFEvI-unsplash.jpg');
-    height: 150px;
+    background-image: url('images/headers/alberto-zanetti-I4WSyUKvJ2U-unsplash2.jpg');
+    height: 210px;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -30,7 +30,7 @@ nav {
 }
 
 .navContainer {
-    padding: 1rem 1rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +44,10 @@ nav {
 
 .navBox a {
     padding: 0.3rem 0.3rem;
+}
+
+.navBox i {
+    font-size: 0.75rem;
 }
 
 a {
@@ -72,7 +76,8 @@ main {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: normal;
 }
 
 #intro {
@@ -92,9 +97,9 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     margin: auto;
-    max-width: 61rem;
+    max-width: 69rem;
     padding: 1rem;
     grid-gap: 1rem;
 }
@@ -103,24 +108,40 @@ h1 {
     /*border-style: solid;
     border-width: 0.01rem;*/
     border-radius: 20px;
-    height: 14rem;
-    width: 14rem;
+    height: 16rem;
+    width: 16rem;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 1.5rem;
 }
 
 #aboutMeBox {
     grid-area: 1 / 1 / span 2 / span 2;
-    width: 29rem;
+    width: 33rem;
     justify-content: flex-start;
+    padding-left: 0;
 }
 
 #aboutMeBox img {
-    width: 8rem;
+    width: 9rem;
+}
+
+#aboutMeBox p {
+    text-align: left;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    #aboutMeBox img, span {
+        display: none;
+    }
+    #aboutMeBox {
+        justify-content: center;
+    }
 }
 
 #myBackgroundBox {
@@ -131,9 +152,20 @@ h1 {
     grid-area: 1 / 4 / span 1 / span 1;
 }
 
+#theFutureBox em {
+    font-family: cursive;
+    color: orange;
+}
+
 #myExperienceBox {
     grid-area: 2 / 1 / span 1 / span 1;
     opacity: 0.95;
+}
+
+#myExperienceBox em {
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
+    display: block;
 }
 
 #mySkillsBox {
@@ -142,9 +174,19 @@ h1 {
 
 #mySelfBox {
     grid-area: 2 / 3 / span 1 / span 2;
-    width: 29rem;
+    width: 33rem;
+    justify-content: space-around;
 }
 
+iframe {
+    border-style: none;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 320px;
+    height: 240px;
+    flex-shrink: 1;
+    font-family: 'Playfair Display';
+    border-radius: 24px;
+}
 
 footer {
     font-size: 0.8rem;

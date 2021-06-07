@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='styles.css' rel='stylesheet'>
+    <link href='textAnimations.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+Upright:wght@300&family=Nothing+You+Could+Do&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <!--Placeholder-->
@@ -18,10 +21,10 @@
         <div class=navContainer id="navContainer">
             <p>alexJamesWalton</p>
             <div class="navBox" id="navBox1">
-                <a href="#introduction">myStory</a>
-                <a href="#recordings">myExperience</a>
-                <a href="#people">mySkills</a>
-                <a href="#person">mySelf</a>
+                <a href="#myStory" id="myStoryNav">myStory</a>
+                <a href="#mySkills">mySkills</a>
+                <a href="mySelf.html">mySelf</a>
+                <a href="index.html"><i class="fa fa-refresh"></i></a>                
             </div>
             <p id="findMe">findMe</p>
         </div>
@@ -30,37 +33,89 @@
 
     <main>
         <section id="intro">
-        <h1>aboutMe</h1>
-            <p>i Am A Full Stack Engineering Convert.  
-              <br>i Am A Former Data Analytics Professional In The Future Mobility Space.  
-              <br>i Have Devoted Much Of My Recent Career To Driving Rapid Digital Transformation At Arcadis. 
-              <br>i Have Learnt That The Power Lies In The Hands Of Those Who Build.
-            </p>
+            <h1 class="jt --debug" id="h1Element">if You Build It, They Will Come</h1>  
+
+            <!--  <h1 class="jt --debug">
+                <span class="jt__row">
+                  <span class="jt__text">if You Build It, They Will Come</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">if You Build It, They Will Come</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">if You Build It, They Will Come</span>
+                </span>
+                <span class="jt__row jt__row--sibling" aria-hidden="true">
+                  <span class="jt__text">if You Build It, They Will Come</span>
+                </span>
+              </h1>  -->
+
         </section>
         <section id="gridSection">
             <div class="grid" id="grid">
                 <div class="box" id="aboutMeBox">
-                    <img src="images/avatars/fbavatar_1622999666620_6807353993704232197.png" alt="A picture of alexWalton"/>
-                    <p>aboutMe</p>    
+                    <img src="images/avatars/fbavatar_1622999666620_6807353993704232197.png" alt="A picture of alexWalton" id="alexsImage"/>
+                    <p>
+                        <strong>aboutMe</strong>
+                        <span id="aboutMeText">
+                            <br><br>analytics Leader And Change-Maker In Environmental & Civil Engineering
+                        </span>
+                    </p>
                 </div>
                 <div class="box" id="myBackgroundBox">
-                    <p>myBackground</p>    
+                    <p>
+                        <strong>myBackground</strong>
+                        <span>
+                            <br><br>i Drive Rapid Digital Transformation @ Arcadis
+                        </span>
+                    </p>    
                 </div>
                 <div class="box" id="theFutureBox">
-                    <p>theFuture</p>    
+                    <p>
+                        <strong>theFuture</strong>
+                        <span>
+                            <br><br>reborn Full Stack Engineer 
+                            <br><em id="beTheChangeText">be The Change</em>
+                        </span>
+                    </p>    
                 </div>
                 <div class="box" id="myExperienceBox">
-                    <p>myExperience</p>    
+                    <p>
+                        <strong>myExperience</strong>
+                        <span>
+                            <br><br>remediation Data Lake  
+                            <br><em>#industryFirst</em>
+                            global H&S App  
+                            <br>automation @ Scale
+                            <br>nlp Community
+                        </span>
+                    </p>    
                 </div>
                 <div class="box" id="mySkillsBox">
-                    <p>mySkills</p>    
+                    <p>
+                        <strong>mySkills</strong>
+                        <span>
+                            <br><br>#html css js
+                            <br>#react.js redux
+                            <br>#node.js
+                            <br>#SQL
+                        </span>
+                    </p>    
                 </div>
                 <div class="box" id="mySelfBox">
-                    <p>mySelf</p>    
+                    <p>
+                        <strong>mySelf</strong>
+                        <br><br>music
+                        <br>family
+                        <br>food
+                        <br>future
+                    </p>
+                    <iframe src="https://www.youtube.com/embed/zQYQt89Vebs" width="320px" height="240px" controls>
+                        Video not supported
+                    </iframe>        
                 </div>                
             </div>
         </section>
-        <br>
     </main>
 
     <hr>
@@ -68,6 +123,8 @@
     <footer>
         Copyright alexJamesWalton 2021
     </footer>
+
+    <script src="scripts/textShowHide.js"></script>
 
 </body>
 </html>
