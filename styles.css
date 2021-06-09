@@ -110,7 +110,7 @@ h1 {
     border-radius: 20px;
     height: 16rem;
     width: 16rem;
-    background-color: black;
+    background-color:black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,17 +125,22 @@ h1 {
 #aboutMeBox {
     grid-area: 1 / 1 / span 2 / span 2;
     width: 33rem;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 0;
 }
 
 #aboutMeBox img {
     width: 9rem;
+    display: none;
 }
 
 #aboutMeBox p {
-    text-align: left;
+    text-align: center;
     padding: 2rem;
+}
+
+#aboutMeText {
+    display: none;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -162,6 +167,10 @@ h1 {
 #theFutureBox em {
     font-family: cursive;
     color: orange;
+}
+
+#theFutureText {
+    display: none;
 }
 
 #myExperienceBox {
