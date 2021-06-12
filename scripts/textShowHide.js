@@ -1,13 +1,3 @@
-// Remove Image Script
-/*
-let myStoryNav = document.getElementById('myStoryNav');
-
-myStoryNav.addEventListener('mousedown', hideImg);
-
-myStoryNav.addEventListener('mouseup', showImg);
-*/
-
-
 
 
 // Change Header Background Image When Hovering Over Nav Buttons
@@ -55,6 +45,9 @@ let aboutMeText = document.getElementById('aboutMeText');
 let alexsImage = document.getElementById('alexsImage');
 let myBackgroundText = document.getElementById('myBackgroundText');
 let theFutureText = document.getElementById('theFutureText');
+let myExperienceText = document.getElementById('myExperienceText');
+let mySkillsText = document.getElementById('myExperienceText');
+let mySelfText = document.getElementById('mySelfText');
 
 
 
