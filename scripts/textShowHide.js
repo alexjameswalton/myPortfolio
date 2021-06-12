@@ -158,3 +158,24 @@ function deactivateBeTheChange (){
 
 beTheChangeText.onmouseover = activateBeTheChange;
 beTheChangeText.onmouseout = deactivateBeTheChange;
+
+//TRANSITION BASED ON MY STORY:
+/*
+mySkillsNav.onclick = function () {
+  aboutMeBox.style.gridArea = '2 / 1 / span 2 / span 2';
+  myBackgroundBox.style.gridArea = '2 / 3 / span 1 / span 1';
+  theFutureBox.style.gridArea = '2 / 4 / span 1 / span 1';
+  myExperienceBox.style.gridArea = '1 / 1 / span 1 / span 1';
+  mySkillsBox.style.gridArea = '1 / 2 / span 1 / span 1';
+  mySelfBox.style.gridArea = '1 / 3 / span 1 / span 2';
+}
+
+myStoryNav.onclick = function () {
+  aboutMeBox.style.gridArea = '1 / 1 / span 2 / span 2';
+  myBackgroundBox.style.gridArea = '1 / 3 / span 1 / span 1';
+  theFutureBox.style.gridArea = '1 / 4 / span 1 / span 1';
+  myExperienceBox.style.gridArea = '2 / 1 / span 1 / span 1';
+  mySkillsBox.style.gridArea = '2 / 2 / span 1 / span 1';
+  mySelfBox.style.gridArea = '2 / 3 / span 1 / span 2';
+}
+*/
