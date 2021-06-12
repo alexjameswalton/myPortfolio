@@ -80,6 +80,8 @@ h1 {
     font-size: 3rem;
     margin-bottom: 3rem;
     font-weight: normal;
+    margin-right: 1rem;
+    margin-left: 1rem; 
 }
 
 #intro {
