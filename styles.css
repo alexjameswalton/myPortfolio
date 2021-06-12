@@ -256,3 +256,34 @@ footer {
         display: none;
     }
 }
+
+
+@media only screen and (max-width: 480px) {
+    .grid {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+        max-width: 18rem;
+    }
+    #aboutMeBox {
+        grid-area: 1 / 1 / span 1 / span 1;
+        width: 16rem;
+    }
+    #myBackgroundBox {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+    #theFutureBox {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }   
+    #myExperienceBox {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+    #mySkillsBox {
+        grid-area: 5 / 1 / span 1 / span 1;
+    }
+    #mySelfBox {
+        grid-area: 6 / 1 / span 1 / span 2;
+        width: 16rem;
+    }
+    iframe {
+        display: none;
+    }
+}
