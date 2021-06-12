@@ -231,21 +231,43 @@ footer {
         grid-template: repeat(4, 1fr) / repeat(2, 1fr);
         max-width: 35rem;
     }
+    #aboutMeBox img {
+        display: block;
+        justify-content: flex-start;
+    }
+    #aboutMeText {
+        display: inline;
+    }
     #myBackgroundBox {
         grid-area: 2 / 1 / span 1 / span 1;
     }
+    #myBackgroundText {
+        display: inline;
+    }
     #theFutureBox {
         grid-area: 2 / 2 / span 1 / span 1;
-    }   
+    }
+    #theFutureText {
+        display: inline;
+    }
     #myExperienceBox {
         grid-area: 3 / 1 / span 1 / span 1;
+    }
+    #myExperienceText {
+        display: inline;
     }
     #mySkillsBox {
         grid-area: 3 / 2 / span 1 / span 1;
     }
+    #mySkillsText {
+        display: inline;
+    }
     #mySelfBox {
         grid-area: 4 / 1 / span 1 / span 2;
-    } 
+    }
+    #mySelfText {
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -266,6 +288,9 @@ footer {
     #aboutMeBox {
         grid-area: 1 / 1 / span 1 / span 1;
         width: 16rem;
+    }
+    #aboutMeBox img {
+        display: none;
     }
     #myBackgroundBox {
         grid-area: 2 / 1 / span 1 / span 1;
