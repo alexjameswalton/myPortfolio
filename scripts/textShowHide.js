@@ -38,7 +38,7 @@ let aboutMeBox = document.getElementById('aboutMeBox');
 let myBackgroundBox = document.getElementById('myBackgroundBox');
 let theFutureBox = document.getElementById('theFutureBox');
 let myExperienceBox = document.getElementById('myExperienceBox');
-let mySkillsBox = document.getElementById('myExperienceBox');
+let mySkillsBox = document.getElementById('mySkillsBox');
 let mySelfBox = document.getElementById('mySelfBox');
 
 let aboutMeText = document.getElementById('aboutMeText');
@@ -46,7 +46,7 @@ let alexsImage = document.getElementById('alexsImage');
 let myBackgroundText = document.getElementById('myBackgroundText');
 let theFutureText = document.getElementById('theFutureText');
 let myExperienceText = document.getElementById('myExperienceText');
-let mySkillsText = document.getElementById('myExperienceText');
+let mySkillsText = document.getElementById('mySkillsText');
 let mySelfText = document.getElementById('mySelfText');
 
 
@@ -91,7 +91,41 @@ theFutureBox.addEventListener('mouseover', showTheFutureText);
 theFutureBox.addEventListener('mouseout', hideTheFutureText);
 
 
+function showMyExperienceText () {
+  myExperienceText.style.display = 'inline'
+};
 
+function hideMyExperienceText () {
+    myExperienceText.style.display = 'none'
+};
+
+myExperienceBox.addEventListener('mouseover', showMyExperienceText);
+myExperienceBox.addEventListener('mouseout', hideMyExperienceText);
+
+
+function showMySkillsText () {
+  mySkillsText.style.display = 'inline'
+};
+
+function hideMySkillsText () {
+    mySkillsText.style.display = 'none'
+};
+
+mySkillsBox.addEventListener('mouseover', showMySkillsText);
+mySkillsBox.addEventListener('mouseout', hideMySkillsText);
+
+
+
+function showMySelfText () {
+  mySelfText.style.display = 'inline'
+};
+
+function hideMySelfText () {
+    mySelfText.style.display = 'none'
+};
+
+mySelfBox.addEventListener('mouseover', showMySelfText);
+mySelfBox.addEventListener('mouseout', hideMySelfText);
 
 
 
