@@ -48,7 +48,7 @@ let theFutureText = document.getElementById('theFutureText');
 let myExperienceText = document.getElementById('myExperienceText');
 let mySkillsText = document.getElementById('mySkillsText');
 let mySelfText = document.getElementById('mySelfText');
-
+let myMusicVid = document.getElementById('myMusicVid');
 
 
 function showAlexsImg() {
@@ -117,11 +117,13 @@ mySkillsBox.addEventListener('mouseout', hideMySkillsText);
 
 
 function showMySelfText () {
-  mySelfText.style.display = 'inline'
+  mySelfText.style.display = 'inline';
+  myMusicVid.style.display = 'inline';
 };
 
 function hideMySelfText () {
-    mySelfText.style.display = 'none'
+    mySelfText.style.display = 'none';
+    myMusicVid.style.display = 'none';
 };
 
 mySelfBox.addEventListener('mouseover', showMySelfText);

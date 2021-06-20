@@ -72,9 +72,21 @@ a {
 
 /* MAIN SECTION */
 
+@keyframes slideInFromLeft {
+    0% {
+      /*transform: translateY(100%);*/
+      transform: scale(33%);
+    }
+    100% {
+      /*transform: translateX(0);*/
+      transform: scale(100%);
+    }
+}
+
 main {
     text-align: center;
 }
+
 
 h1 {
     font-size: 3rem;
@@ -82,6 +94,7 @@ h1 {
     font-weight: normal;
     margin-right: 1rem;
     margin-left: 1rem; 
+    animation: 3s ease-out 0s 1 slideInFromLeft;
 }
 
 #intro {
@@ -216,6 +229,7 @@ iframe {
     flex-shrink: 1;
     font-family: 'Playfair Display';
     border-radius: 24px;
+    display: none;
 }
 
 footer {
